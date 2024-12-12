@@ -1,0 +1,75 @@
+#### **1. Matrix-Vector Product in Real Data**
+- Load the **MNIST** dataset.
+- Select the first image as a flattened vector (\(28 \times 28 = 784\)).
+- Multiply this vector by a random matrix \(A \in \mathbb{R}^{784 \times 784}\) to create a linear transformation of the image.
+- Reconstruct the image from the result and visualize the change.
+
+---
+
+#### **2. Vector Space Analysis**
+- Generate two vectors representing pixels of distinct images (\(v_1, v_2 \in \mathbb{R}^{784}\)).
+- Verify if the vectors are linearly independent by calculating their determinant (or using tools such as orthogonality and basis).
+- Test vector addition and verify if the result also belongs to the image space.
+
+---
+
+#### **3. Symmetric Matrix Decomposition**
+- Create a covariance matrix from samples of the MNIST dataset (\(C = X^T X\)).
+- Verify if the matrix \(C\) is symmetric.
+- Calculate the eigenvalues and eigenvectors of matrix \(C\) and interpret their significance in relation to the data.
+
+---
+
+#### **4. Simplified PCA Data Reconstruction**
+- Use the eigenvalues and eigenvectors calculated earlier.
+- Reduce the dimensionality of the flattened vector of an MNIST image to its top two principal components.
+- Reconstruct the original image using only these two components and visualize the impact.
+
+---
+
+#### **5. Vector Norm**
+- Compute the \(L_1\) and \(L_2\) norms of different vectors representing images.
+- Normalize the vectors using their respective norms and observe how the image changes.
+- Compare the norms and discuss their applications in machine learning problems.
+
+---
+
+#### **6. Orthogonal Matrices**
+- Generate a random orthogonal matrix \(Q\) (\(Q^T Q = I\)).
+- Multiply the matrix \(Q\) by a flattened image vector (\(v \in \mathbb{R}^{784}\)).
+- Verify that the transformation does not alter the vector's length (a property preserved by orthogonal matrices).
+
+---
+
+#### **7. Singular Value Decomposition (SVD) on Data**
+- Apply SVD to a data matrix extracted from the MNIST dataset (\(X \in \mathbb{R}^{n \times 784}\), with a small \(n\)).
+- Reproject the images using only the largest singular values.
+- Observe how the loss of singular values impacts the quality of the reconstructed data.
+
+---
+
+#### **8. Trace and Determinant**
+- Generate a random matrix \(A \in \mathbb{R}^{10 \times 10}\) and calculate its trace.
+- Use the trace to interpret the sum of eigenvalues.
+- Calculate the determinant of matrix \(A\) and analyze its relation to invertibility.
+
+---
+
+#### **9. Projections in Vector Space**
+- Take two vectors \(v_1\) and \(v_2\) representing flattened images.
+- Project \(v_1\) onto the direction of \(v_2\) using:
+  \[
+  \text{proj}_{v_2}(v_1) = \frac{v_1 \cdot v_2}{v_2 \cdot v_2} v_2
+  \]
+- Visualize the differences between \(v_1\) and its projection.
+
+---
+
+#### **10. Creating Subspaces**
+- Choose three different images and treat their flattened vectors as a basis for a subspace.
+- Generate a new image as a linear combination of these three vectors.
+- Verify whether the new image belongs to the subspace generated.
+
+---
+
+These exercises are strictly limited to the chapter's concepts and provide an excellent practical review. Choose the ones you’re most interested in, and let’s work on them! 😊
